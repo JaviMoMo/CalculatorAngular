@@ -1,0 +1,29 @@
+<div class="calculator-contain">
+    <div class="calculator">
+        <div class="title-calculator-contain">
+            <p class="title-calculator">KAZIO</p>
+            <p class="memory-calculator">MEMORY-8S</p>
+            <p class="description-calculator">ELECTRONIC CALCULATOR</p>
+        </div>
+        <div class="screen-calculator-contain">
+            <input type="text" placeholder="0" value="{{valueInput}}" readonly/>
+        </div>
+        <div class="buttons-calculator-contain">
+            <div class="buttonsUp-contain">
+                <button  *ngFor="let btnUpText of btnUp"
+                [ngClass]="{'buttonUp-calculator-reset': (btnUpText == 'A/C' || btnUpText =='C'),
+                'buttonUp-calculator': btnUpText != 'AC' || btnUpText != 'C'}"
+                (click)="onClick(btnUpText)">{{btnUpText}}</button>
+            </div>
+            <div class="buttons-contain">
+                <button  *ngFor="let btnText of btn"
+                [ngClass]="{'button-calculator': (btnText != 'x' || '-' || '+' || '=' || '/' || '.'),
+                'button-calculator-oper': btnText == 'x' || btnText == '-' || btnText == '+'  || btnText == '/' || btnText == '.',
+                'button-calculator-equal': btnText == '='}"
+                (click)="onClick(btnText)">{{btnText}}</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+

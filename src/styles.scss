@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'digital-clock';
+    src: url(../../../assets/digital-7.regular.ttf);
+}
+@font-face {
+    font-family: 'title';
+    src: url(../../../assets/03644_BankGothicMediumBT.ttf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+*{
+    cursor: default;
+    margin: 0;
+    padding: 0;
+}

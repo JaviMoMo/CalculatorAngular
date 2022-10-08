@@ -1,0 +1,40 @@
+.home-contain{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 90vh;
+    .title-contain{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0px 50px 50px 50px;
+        h1{
+            font-size: 60px;
+            font-family: 'title';
+            color: rgb(0, 0, 0);
+        }
+        .description-title{
+            font-size: 30px;
+            font-family: 'digital-clock';
+            font-weight: bolder;
+            color: rgb(0, 64, 94);
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .home-contain{
+        padding: 50px;
+        .title-contain{
+            margin: 0px 25px 25px 25px;
+            h1{
+                font-size: 30px;
+            }
+            .description-title{
+                font-size: 15px;
+            }
+        }
+    }
+}
